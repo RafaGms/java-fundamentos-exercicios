@@ -1,24 +1,21 @@
+import java.time.OffsetDateTime;
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        var currentYear = OffsetDateTime.now().getYear();
 
-        String product1 = "computer";
-        String product2 = "0ffice desk";
-        int age = 21;
-        int code = 344234;
-        char gender = 'F';
+        System.out.println("Digite seu nome: ");
+        String name = scanner.next();
 
-        double price1 = 3.2342;
+        System.out.println("Digite o ano que voce nasceu:");
+        int year = scanner.nextInt();
 
-        double price2 = 5.234;
-        double measure = 43.234234;
+        var age = currentYear - year;
 
-
-        System.out.println("Products:");
-        System.out.printf("%s, which price is $ %f \n", product1, price1);
-        System.out.printf("%s, which price is $ %f \n", product2, price2);
-        System.out.println("");
-        System.out.printf("Record: %s years old, code %d abd gander: %s %n", age, code, gender);
+        System.out.println("Olá " + name + " você tem " + age + " anos");
+        scanner.close();
     }
-
 }
