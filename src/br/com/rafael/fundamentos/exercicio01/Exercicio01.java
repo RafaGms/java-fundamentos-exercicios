@@ -1,7 +1,9 @@
+package br.com.rafael.fundamentos.exercicio01;
+
 import java.time.OffsetDateTime;
 import java.util.Scanner;
 
-public class Main {
+public class Exercicio01 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
